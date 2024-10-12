@@ -1,0 +1,76 @@
+
+.clientes {
+    background: var(--text-color-primary);
+}
+
+.container-perfil {
+    margin: auto;
+    max-width: 1400px;
+    text-align: center;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    gap: 68px;
+    padding: 113px 0;
+}
+
+.logo-perfil {
+    width: 100%;
+    max-width: 746px;
+}
+.logo-perfil img {
+    width: 100%;
+    height: 100%;
+    max-height: 508px;
+    max-width: 746px;
+    object-fit: cover;
+}
+
+.perfil-descricao {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    text-align: start;
+    /* max-width: 400px; */
+    width: 90vw;
+    margin-bottom: 58px;
+}
+@media (max-width: 768px) {
+    .container-perfil {
+        display: flex;
+        flex-direction: column;
+        padding: 185px var(--py-base);
+        text-align: center;
+        gap: 14px;
+    }
+
+    .logo-perfil img {
+        display: block;
+        height: 100%;
+    max-height: 508px;
+        
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 425px) {
+    .container-perfil {
+        display: flex;
+        flex-direction: column;
+        padding: var(--py-base);
+        text-align: center;
+        gap: 14px;
+    }
+
+    .logo-perfil img {
+        display: block;
+        width: 100%;
+        height: 80px;
+    }
+
+    .perfil-descricao {
+        gap: 14px;
+        text-align: center;
+        width: 100%;
+    }
+}

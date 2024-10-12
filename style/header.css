@@ -1,0 +1,132 @@
+header {
+  background: url("../src/assets/background.png") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  padding: 0 10px 146px;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.content {
+  z-index: 3;
+  /* max-width: 1440px; */
+  margin: 0 auto;
+}
+.logo img {
+  display: block;
+  width: 100%;
+}
+
+.nav-bar {
+  /* position: fixed; */
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+
+  /* left: 50%; Mover a barra horizontalmente para o centro */
+  /* transform: translateX(
+    -50%
+  ); Corrige o deslocamento, centralizando completamente */
+  /* text-align: center; */
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+a {
+  border-right: 1px white solid;
+  padding: 0 5px 0 5px;
+}
+
+.aprentacao {
+  z-index: 2;
+  padding: 210px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Definindo a animação usando @keyframes */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); /* O título começa mais para baixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* O título volta à posição original */
+  }
+}
+
+@keyframes fadeInLef {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); /* O título começa mais para baixo */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* O título volta à posição original */
+  }
+}
+
+/* Aplicando a animação ao título h2 */
+.animate-title {
+  animation: fadeInUp 1s ease-in-out; /* Duração de 1 com suavidade */
+}
+
+.animate-subtitle {
+  animation: fadeInUp 1s ease-in-out;
+}
+@media (max-width: 768px) {
+  .nav-bar {
+    padding: 15px 0;
+    width: 100%;
+  }
+
+  .aprentacao {
+    padding: 105px 0 65px;
+    align-items: flex-start;
+    text-align: left;
+    width: 100vw;
+  }
+}
+
+@media (max-width: 425px) {
+  header {
+    background: url("../src/assets/Hero-mobile.png") no-repeat top center;
+    padding: 0 10px 0;
+  }
+  .nav-bar {
+    padding: 23px 0;
+    width: 100%;
+  }
+
+  .logo img {
+    display: block;
+    width: 50%;
+    max-width: 35px;
+  }
+}

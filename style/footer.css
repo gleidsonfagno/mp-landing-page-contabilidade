@@ -1,0 +1,136 @@
+.footer {
+    max-width: 1400px;
+    margin: auto;
+    padding: var(--py-base);
+}
+
+.footer-descricao {
+    padding: 253px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.footer-descricao h2 {
+    font-size: 60px;
+}
+
+.contato {
+    display: flex;
+    flex-direction: column;
+    /* gap: 67px; */
+    
+}
+
+.title-footer h2{
+    font-size: 96px;
+    text-align: center;
+}
+
+.contato-descricao {
+    display: flex;
+    gap: 58px;
+    padding: 67px 0;
+    align-items: center;
+}
+
+.imagem-contato img{
+    display: block;
+    max-width: 889px;
+    width: 100%;
+} 
+
+.contato-endereco ul {
+    display: flex;
+    flex-direction: column;
+    gap: 47px;
+}
+
+.contato-endereco ul li h2 {
+    font-size: 50px;
+}
+
+.socialinks {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 18px 0;
+}
+
+.nav-footer a {
+    border: none;  
+}
+.nav-footer a img{
+    display:block; 
+    width: 100%;
+    max-width: 46px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-descricao {
+        padding: 48px 0;
+    }
+    
+    .footer-descricao h2 {
+        font-size: 40px;
+    }
+
+    .title-footer h2{
+        font-size: var(--fs-xl);
+    }
+
+    .contato-descricao {
+        display: flex;
+        gap: 10px;
+        padding: 17px 0;
+        align-items: center;
+    }
+
+    .contato-endereco ul li h2 {
+        font-size: 30px;
+    }
+
+    .contato-endereco ul li p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .footer-descricao {
+        padding: 48px 0;
+    }
+    
+    .footer-descricao h2 {
+        font-size: 20px;
+    }
+
+    .contato-endereco ul {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contato-endereco ul li h2 {
+        font-size: 15px;
+    }
+
+    .contato-endereco ul li p {
+        font-size: 10px;
+    }
+
+    .nav-footer a img{
+        display:block; 
+        width: 100%;
+        max-width: 13px;
+    }
+    
+}

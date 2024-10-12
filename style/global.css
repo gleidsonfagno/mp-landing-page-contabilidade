@@ -1,0 +1,124 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --bg-color: #000000;
+  --text-color-primary: #FFFFFF;
+  --text-color-secondary: #666666;
+  --brand-button-primary: #DF994E;
+  /* --brand-color-secondary: #fc4a1a; */
+
+  --ff-kulim: "Kulim Park", sans-serif;
+  --ff-inter: "Inter", sans-serif;
+
+  --fw-base: 300;
+  --fw-md: 500;
+  --fw-bold: bold;
+
+  --fs-sm: 15px;
+  --fs-base: 16px;
+  --fs-lg: 20px;
+  --fs-xl: 32px;
+  --fs-2xl: 64px;
+  --fs-b: 128px;
+
+  --py-base: 16px;
+  --py-lg: 24px;
+  --py-xl: 48px;
+  --px-lg: 24px;
+}
+
+body {
+    font-family: var(--ff-kulim);
+    background: var(--bg-color);
+    color: var(--text-color-primary);
+    
+}
+
+h1 {
+  font-size: var(--fs-b);
+  font-weight: bold;
+}
+
+h2 {
+  font-size: var(--fs-2xl);
+  font-weight: bold;
+}
+
+p {
+  font-size: var(--fs-xl);
+  font-family: var(--ff-inter);
+  font-weight: var(--fw-base);
+  color: var(--text-color-secondary);
+}
+
+span {
+  font-family: var(--ff-kulim);
+  color: var(--brand-button-primary);
+  font-size: var(--fs-xl);
+}
+a {
+  font-size: var(--fs-lg);
+  font-weight: var(--fw-base);
+  color: var(--text-color-primary);
+  text-decoration:  none;
+  text-transform: uppercase;
+}
+
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: var(--fs-2xl);
+    font-weight: var(--fw-bold);
+  }
+  a {
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-base);
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+
+  --fs-xl: 20px;
+  --fs-b: 51.62px;
+  --fs-2xl: 25px;
+  }
+
+  p {
+    font-size: var(--fs-sm);
+  }
+
+  a {
+    font-size: 10px;
+    font-weight: var(--fw-base);
+
+  }
+
+  h1 {
+    font-size: var(--fs-b);
+   
+    font-weight: var(--fw-bold);
+  }
+}
+
+@media (max-width: 425px) {
+  :root {
+  --fs-b: 40.62px;
+
+  }
+}
